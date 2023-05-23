@@ -1,0 +1,4 @@
+<h1>this is the index page</h1>
+  <% @tasks.each do |task| %>
+    <p><%= link_to task.title, task_path(task.id) %></p>
+  <% end %>
